@@ -1,0 +1,10 @@
+name: Common check
+on: push
+jobs:
+  project_0:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: test
+        run: echo "I am common check and I will always succeed."

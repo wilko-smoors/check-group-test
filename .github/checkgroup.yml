@@ -1,0 +1,23 @@
+subprojects:
+  - id: common
+    paths:
+      - "**"
+    checks:
+      - "common_check"
+  - id: documentation
+    paths:
+      - "docs/**"
+    checks:
+      - "docs_check"
+  - id: project_0
+    paths:
+      - "projects/project_0/**"
+    checks:
+      - "project_0_check"
+      - "common_check"
+  - id: project_1
+    paths:
+      - "projects/project_1/**"
+    checks:
+      - "project_1_check"
+      - "common_check"
